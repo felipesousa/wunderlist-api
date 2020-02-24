@@ -16,12 +16,14 @@
     "build"
   ],
   "scripts": {
+    "dev": "tsc -p tsconfig.json && rollup -w -c rollup.config.js",
     "test": "jest --coverage",
     "test:watch": "jest --watch --coverage",
     "prebuild": "rm -rf dist/ && rm -rf build/",
     "build": "tsc -p tsconfig.json && rollup -c rollup.config.js",
     "postbuild": "cp dist/*.d.ts build/",
-    "docs": "./node_modules/typedoc/bin/typedoc --out docs src"
+    "docs": "./node_modules/typedoc/bin/typedoc --out docs src",
+    "clear": "rm -rf build/ && rm -rf dist/"
   },
   "private": false,
   "devDependencies": {
