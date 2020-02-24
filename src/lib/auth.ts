@@ -1,28 +1,28 @@
 export interface Headers {
-  clientId: string;
-  accessToken: string;
+  clientId: string
+  accessToken: string
 }
 
 type HeadersT = {
-  'X-Access-Token': string;
-  'X-Client-ID': string;
-  'Content-Type': string;
-};
+  'X-Access-Token': string
+  'X-Client-ID': string
+  'Content-Type': string
+}
 
 class Auth {
-  public headers: HeadersT;
+  protected headers: HeadersT
 
   constructor(headers: Headers) {
-    this.headers = this.setHeaders(headers);
+    this.headers = this.setHeaders(headers)
   }
 
-  public setHeaders({ clientId, accessToken }: Headers): HeadersT {
+  private setHeaders({ clientId, accessToken }: Headers): HeadersT {
     return {
       'X-Access-Token': accessToken,
       'X-Client-ID': clientId,
       'Content-Type': 'application/json',
-    };
+    }
   }
 }
 
-export default Auth;
+export default Auth

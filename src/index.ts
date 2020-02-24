@@ -1,16 +1,11 @@
-import Auth, { Headers } from './lib/auth';
+import Auth, { Headers } from './lib/auth'
 
 class WunderlistApi {
-  public auth: null | any;
+  private auth: Auth
 
   constructor({ accessToken, clientId }: Headers) {
-    this.auth = null;
-    this.authorize({ accessToken, clientId });
-  }
-
-  authorize({ accessToken, clientId }: Headers): void {
-    this.auth = new Auth({ accessToken, clientId });
+    this.auth = new Auth({ accessToken, clientId })
   }
 }
 
-export default WunderlistApi;
+export default WunderlistApi
