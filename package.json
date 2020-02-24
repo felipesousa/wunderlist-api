@@ -70,12 +70,12 @@
       }
     },
     "collectCoverageFrom": [
-      "src/*.{js,ts}"
+      "src/**/*.{js,ts}"
     ]
   },
   "lint-staged": {
     "src/**/*.ts": [
-      "prettier --write --no-semi --single-quote --trailing-comma es5"
+      "prettier --write --config .prettierrc.js"
     ]
   }
 }
