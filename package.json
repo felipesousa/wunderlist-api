@@ -8,7 +8,7 @@
   "license": "MIT",
   "husky": {
     "hooks": {
-      "pre-commit": "yarn run test && lint-staged && yarn run docs",
+      "pre-commit": "yarn run test && lint-staged",
       "pre-push": "yarn run build"
     }
   },
