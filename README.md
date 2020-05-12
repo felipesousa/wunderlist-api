@@ -1,9 +1,13 @@
+## 👋🏻📕 Bye and thank you!
+
+On 6th May, 2020, Wunderlist has now shut down. The lists will no longer sync across devices and the webapp is no longer available. For that reason the project will be archived, thank's everyone who used and helps the project along the time!
+
 # Wunderlist-api
 > :closed_book: Wunderlist in a simple way.
 
 ---
 
-[![NPM version](http://img.shields.io/npm/v/wunderlist-api.svg?style=flat)](https://www.npmjs.com/package/react-native-looped-carousel-improved)
+[![NPM version](http://img.shields.io/npm/v/wunderlist-api.svg?style=flat)](https://www.npmjs.com/package/wunderlist-api)
 [![Dependency Status](https://david-dm.org/felipesousa/wunderlist-api.svg)](https://david-dm.org/felipesousa/wunderlist-api)
 [![devDependency Status](https://david-dm.org/felipesousa/wunderlist-api/dev-status.svg)](https://david-dm.org/felipesousa/wunderlist-api#info=devDependencies)
 
